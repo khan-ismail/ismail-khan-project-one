@@ -7,6 +7,10 @@
 
   <title>Thunder Force Stadium - Project 1</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Montserrat:wght@400;700&display=swap"
+   rel="stylesheet"> 
+  <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/3b7e1f5bdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,8 +19,8 @@
     <div class="wrapper">
       <!-- nav bar -->
       <menu>
-        <nav>
-          <ul>
+        <nav class="clearfix">
+          <ul class="main-menu clearfix">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Blog</a></li>
@@ -31,7 +35,7 @@
       
       <!-- social media sidebar -->
       <div>
-        <ul>
+        <ul class="social-linkbar">
           <li><i class="fab fa-instagram"></i></li>
           <li><i class="fab fa-facebook-f"></i></li>
           <li><i class="fab fa-snapchat-ghost"></i></li>
@@ -42,18 +46,133 @@
   </header>
 
   <main>
-    <section class="info-content">
-      
+    <!-- info section -->
+    <section class="info1">
+      <div class="img-content-container">
+        <img src="./assets/image-2_2@2x.png" alt="Musician singing on stage with glasses.">
+      </div>
+
+      <div class="wrapper clearfix">
+          <div class="copy-content-container">
+            <h2 class="main-content-titles">performing line up</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem.</p>
+            <button class="read-more-btn">read more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info2">
+      <div class="img-content-container">
+        <img src="./assets/image-2-copy@2x.png" alt="Shiny saxaphone on stage with other instruments.">
+      </div>
+
+      <div class="wrapper clearfix">
+        <div class="copy-content-container">
+          <h2 class="main-content-titles">new experiences</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.
+            Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus.
+            Vestibulum vitae tincidunt sem, a blandit sem.</p>
+          <button class="read-more-btn">read more</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- admissions section -->
+    <section class="admissions">
+      <div class="wrapper clearfix">
+        <div class="admission-img-container">
+          <img src="./assets/image-6@2x.png" alt="Crowd of fans front and center near the stage.">
+        </div>
+        
+        <div class="admission-content-container">
+          <h2 class="main-content-titles">get your tickets</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.
+            Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla
+            pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum
+            eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla
+            pulvinar tortor. Lorem ipsum dolor sit amet.</p>
+          <button class="read-more-btn">read more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- connections section -->
+    <section class="connections clearfix">
+      <div class="wrapper">
+        <div class="connections-container">
+          <div class="locations">
+            <i class="fas fa-location-arrow connection-icon"></i>
+            <h4 class="connection-heading">Location</h4>
+          </div>
+
+          <div class="tickets">
+            <i class="fas fa-ticket-alt connection-icon"></i>
+            <h4 class="connection-heading">Tickets</h4>
+          </div>
+
+          <div class="reach-out">
+            <i class="fas fa-phone connection-icon"></i>
+            <h4 class="connection-heading">Reach Out</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="gallery">
+      <div class="wrapper clearfix">
+        <h2 class="main-content-titles">the gram</h2>
+
+        <ul>
+          <li><img src="./assets/image-2@2x.png" alt="Full crowd of fans filling up the stage with fireworks."></li>
+          <li><img src="./assets/gallery-image-2@2x.png" alt="Band getting ready for the concert in a dress rehearsal"></li>
+          <li id="gallery-fix"><img src="./assets/gallery-image-3@2x.png" alt="Plate of chicken wings with vegetables and dipping sauce."></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+      <div class="wrapper clearfix">
+        <menu>
+          <nav>
+            <ul class="main-menu">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+        
+        <!-- address section -->
+        <div class="address-container">
+          <h2 class="main-content-titles">contact</h2>
+          <p>info@gmail.com | 123 - 456 - 7890</p>
+          <p>123 some road, Toronto, ON</p>
+          <p>A5A 5A5, Canada</p>
+        </div>
+
+        <div class="email-container">
+          <!-- email section -->
+          <h2 class="main-content-titles">stay updated</h2>
+          <p>Subscribe to our newsletter to stay updated.</p>
+    
+          <!-- email addres input -->
+          <input type="text" placeholder="Email address">
+          <button class="email-btn">subscribe</button>
+        </div>
+      </div>
+
     </section>
   </main>
 
   <footer>
-    <div class="copyright">
-      <p>Copyright © 2019 Juno College</p>
-    </div>
+    <p>Copyright © 2019 Juno College</p>
+    <p>Created with ☕ @<a href="https://junocollege.com/">Juno College</a></p>
   </footer>
-
-
 
 </body>
 </html>

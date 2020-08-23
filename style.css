@@ -24,14 +24,305 @@ h1 heading, h2 heading, buttons: Iceberg
 */
 
 /* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
 
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  
+  padding: 5px;
+  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+i {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+/* font families */
+h3,
+h4,
+a,
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+h1,
+h2,
+button {
+  font-family: 'Iceberg', cursive;
+  color: #fff;
+
+  text-transform: uppercase;
+}
+
+button {
+  background: #9200FF;
+  border-style: none;
+
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 52px;
+}
+
 .wrapper {
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
-  max-width: 108px;
 }
 
 /* HEADER */
+header {
+  background: url(/assets/image-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+
+  margin: 0 370px;
+  margin-top: 110px;
+}
+
+h3 {
+  background-color: #9200FF;
+  
+  text-align: center; 
+  letter-spacing: 3.5px;
+  font-size: 2.6rem;
+
+  width: 420px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.main-menu {
+  margin: 0 auto;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  width: 100px;
+}
+
+.social-linkbar {
+  position: absolute;
+  top: 290px;
+  right: 0;
+  margin-right: 50px;
+  
+  color: #fff;
+}
+
+/* INFO CONTENT */
+.info1,
+.info2 {
+  background:#0F0632;
+}
+
+.img-content-container,
+.copy-content-container {
+  float: right;
+  width: 50%;
+} 
+
+/* USE THIS TO CENTER THE COPY WELL https://css-tricks.com/centering-css-complete-guide/ */
+.copy-content-container {
+  margin-top: 115px;
+  padding-right: 100px;
+}
+
+.copy-content-container p {
+  margin: 20px 0;
+}
+
+/* ADD CLICK HOVER OVER BUTTON */
+.read-more-btn {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.info2 .img-content-container,
+.info2 .copy-content-container {
+  float: left;
+  width: 50%;
+}
+
+.info2 .copy-content-container {
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+/* admissions */
+.admissions {
+  background: #08080B;
+  padding: 100px 0;
+}
+
+.admission-img-container, .admission-content-container {
+  float: left;
+}
+
+.admission-img-container {
+  width: calc(30% - 40px);
+  margin-right: 40px;
+}
+
+.admission-content-container {
+  width: 70%;
+}
+
+.admission-content-container p {
+  padding: 10px 0;
+}
+
+/* CONNECTIONS */
+.connections {
+  background: #3D0369;
+  padding: 175px 0;
+}
+
+.connections-container {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.locations, 
+.tickets,
+.reach-out {
+  float: right;
+  width: 33.33%;
+  text-align: center;
+}
+
+.connection-icon {
+  font-size: 50px;
+}
+
+.connection-heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+
+  margin-top: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  background: #0F0632;
+  padding: 100px 0;
+}
+
+.gallery h2 {
+  text-align: center;
+}
+
+.gallery li {
+  float: left;
+  width: calc((96% - 50px) / 3);
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.gallery #gallery-fix {
+  margin-right: 0;
+}
+
+/* CONTACT */
+.contact {
+  background: #3D0369;
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+
+.address-container, 
+.email-container {
+  float: left;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.address-container p {
+  margin-top: 3px;
+}
+
+.email-container input {
+  padding: 25px 0;
+  padding-left: 30px;
+  border-style: none;
+  width: 70%;
+}
+
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color: #08080B;
+}
+
+.email-btn {
+  margin-top: 10px;
+  width: 22%;
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #0F0632;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+  
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer a {
+  text-transform: none;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+
+
+
