@@ -109,13 +109,17 @@ header {
   height: 90vh;
 }
 
+.head-text-container {
+	width: 40%;
+	margin: 0 auto;
+	padding: 60px 50px;
+}
+
+
 h1 {
   font-size: 80px;
   line-height: 80px;
   text-align: center;
-
-  margin: 0 370px;
-  margin-top: 110px;
 }
 
 h3 {
@@ -124,11 +128,7 @@ h3 {
   text-align: center; 
   letter-spacing: 3.5px;
   font-size: 2.6rem;
-
-  width: 420px;
-  margin: 0 auto;
-  margin-top: 25px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .main-menu {
@@ -330,11 +330,12 @@ footer a {
 @media (max-width: 940px) {
   /* header */
   header {
-    padding-top: 400px;
+    padding-top: 250px;
   }
 
-  h1 {
-    margin: 0 180px;
+  .head-text-container {
+  	width: 50%;
+  	padding: 60px 5px;
   }
 
   header .main-menu,
@@ -368,18 +369,18 @@ footer a {
   }
   
   .btn-container {
-    width: 66%;
+    margin: 70px auto;
   }
 
   .read-more-btn {
     font-size: 40px;
-    float: right;
-    margin: 30px 0 70px 0;
+    display: block;
+    margin: 0 auto;
   }
   
   /* admissions */
   .admissions {
-    padding-top: 0;
+    padding: 0;
   }
 
   .admission-img-container,
@@ -391,7 +392,7 @@ footer a {
     display: block;
     margin: 0 auto;
     padding: 50px 0;
-    width: 90%;
+    width: 85%;
   }
 
   .admission-content-container p {
@@ -405,15 +406,14 @@ footer a {
     padding: 75px 0;
   }
   .connections-container {
-    width: 100%;
     margin: 0 auto;
   }
 
   .locations,
   .tickets,
   .reach-out {
-    margin-right: 235px;
     padding: 50px 0;
+    width: 100%;
   }
 
   .connections-container i {
@@ -497,6 +497,168 @@ footer a {
     font-size: 25px;
   }
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 812px) {
+	/* header */
+	header {
+		padding: 225px 0;
+		height: auto;
+	}
+	
+	.head-text-container {
+		width: 60%;
+	}
+
+	/* connections */
+	.locations,
+	.tickets,
+	.reach-out {
+		padding: 35px 0;
+	}
+}
+
+/* landscape iPhone 6/7/8 */
+@media (max-width: 700px) {
+	.head-text-container {
+		width: 70%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header {
+		height: 110vh;
+	}
+
+	.head-text-container {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 44px;
+	}
+
+	.copy-content-container p,
+	.admission-content-container p {
+		font-size: 22px;
+	}
+
+	/* contact */
+	.main-menu {
+		padding-top: 20px;
+		padding-bottom: 90px;
+		float: right;
+		width: 106%;
+	}
+
+	.contact a {
+		font-size: 22px;
+	}
+
+	.contact p {
+		font-size: 23px;
+	}
+
+	.email-container p {
+		font-size: 17px;
+	}
+
+	.email-container input,
+	.email-btn {
+		width: 100%;
+	}
+}
+
+/* smaller phones */
+@media (max-width: 414px) {
+	/* header {
+		height: 120vh;
+	} */
+
+	h1 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	h3 {
+		font-size: 1.9rem;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	.copy-content-container p,
+	.admission-content-container p {
+		font-size: 19px;
+	}
+
+	.admission-content-container p {
+		line-height: 35px;
+	}
+
+	.read-more-btn {
+		font-size: 30px;
+		padding: 15px;
+	}
+
+	/* connections */
+	.connections-container i {
+		font-size: 60px;
+	}
+
+	.connections-container h4 {
+		font-size: 27px;
+	}
+
+	/* contact */
+	.contact a,
+	.contact p {
+		font-size: 17px;
+	}
+
+	/* footer */
+	footer p:first-of-type {
+		font-size: 17px;
+	}
+
+	footer p,
+	footer a {
+		font-size: 10px;
+	}
+}
+
+/* even smaller phones */
+@media (max-width: 350px) {
+	h3 {
+		font-size: 1.7rem;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	.copy-content-container p,
+	.admission-content-container p {
+		font-size: 15px;
+	}
+
+	.read-more-btn {
+		font-size: 25px;
+		padding: 15px;
+	}
+
+	.main-menu {
+		width: 109%;
+	}
+
+	.contact a,
+	.contact p {
+		font-size: 15px;
+	}
+}
+
 
 
 
