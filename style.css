@@ -231,6 +231,7 @@ h3 {
   float: right;
   width: 33.33%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .connection-icon {
@@ -262,7 +263,7 @@ h3 {
   margin-top: 100px;
 }
 
-.gallery #gallery-fix {
+.gallery .gallery-fix {
   margin-right: 0;
 }
 
@@ -322,6 +323,182 @@ footer a {
   text-decoration: underline;
   font-size: 16px;
 }
+
+/* MEDIA QUERIES */
+
+/* portrait tablet and small desktops */
+@media (max-width: 940px) {
+  /* header */
+  header {
+    padding-top: 400px;
+  }
+
+  h1 {
+    margin: 0 180px;
+  }
+
+  header .main-menu,
+  header .social-linkbar {
+    display: none;
+  }
+
+  /* info */
+  .img-content-container,
+  .copy-content-container {
+    width: 100%;
+  }
+
+  .info2 .img-content-container,
+  .info2 .copy-content-container {
+    width: 100%;
+  }
+
+  .info2 .copy-content-container {
+    padding: 0;
+  }
+
+  .copy-content-container {
+    margin-top: 65px;
+    padding: 0;
+  }
+
+  .copy-content-container p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .btn-container {
+    width: 66%;
+  }
+
+  .read-more-btn {
+    font-size: 40px;
+    float: right;
+    margin: 30px 0 70px 0;
+  }
+  
+  /* admissions */
+  .admissions {
+    padding-top: 0;
+  }
+
+  .admission-img-container,
+  .admission-content-container {
+    width: 100%;
+  }
+
+  .admission-img-container img {
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 90%;
+  }
+
+  .admission-content-container p {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 30px 0;
+  }
+
+  /* connections */
+  .connections {
+    padding: 75px 0;
+  }
+  .connections-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .locations,
+  .tickets,
+  .reach-out {
+    margin-right: 235px;
+    padding: 50px 0;
+  }
+
+  .connections-container i {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+
+  .connections-container h4 {
+    font-size: 37px;
+  }
+
+  /* gallery */
+  .gallery h2 {
+    margin-bottom: 100px;
+  }
+
+  .gallery li {
+    width: 50%;
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+
+  .gallery-fix {
+    display: none;
+  }
+
+  /* contact */
+  .contact a {
+    font-size: 25px;
+  }
+
+  .main-menu li {
+    width: 24%;
+    padding: 0;
+  }
+
+  .main-menu {
+    margin: 0;
+    padding: 60px 0 15px 0;
+  }
+
+  .address-container,
+  .email-container {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .email-container input,
+  .email-btn {
+    width: 95%;
+    margin-top: 20px;
+  }
+  
+  .email-container input {
+    padding-left: 0;
+  }
+
+  .contact h2 {
+    padding: 15px 0;
+  }
+
+  input::placeholder {
+    text-align: center;
+    font-size: 22px
+  }
+
+  .email-btn {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+
+  .contact p {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  /* footer */
+  footer p:first-of-type {
+    font-size: 25px;
+  }
+}
+
+
 
 
 
